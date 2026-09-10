@@ -1,0 +1,16 @@
+.boxUsuario{
+    background-color: #f8f8f8;
+    border: 1px solid gray;
+    width: 200px;
+    height: 45px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    display: flex;
+
+}
+
+.userIconBox{
+    width: 20px;
+
+}

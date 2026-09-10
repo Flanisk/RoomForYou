@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: #f1f4ff;
+    font-family: 'Manrope', sans-serif;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    gap: 30px;
+    background-color: #f9faff;
+
+}
+main {
+    margin-left: 0;
+    padding: 10px;
+}

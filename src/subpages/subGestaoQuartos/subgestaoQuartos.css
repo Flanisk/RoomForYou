@@ -1,0 +1,10 @@
+.subgestao-quartos .total,
+.subgestao-quartos .disponivel,
+.subgestao-quartos .ocupado {
+    min-height: 150px;
+    box-shadow: 0 4px 12px rgba(0, 59, 149, 0.08);
+}
+
+.subgestao-quartos .pizza {
+    min-height: 300px;
+}

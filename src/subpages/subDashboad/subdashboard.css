@@ -1,0 +1,30 @@
+.box {
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.pizza {
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #d5d5d5;
+    min-height: 400px;
+    padding: 20px;
+}
+
+.quartos {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.total,
+.disponivel,
+.ocupado,
+.manutencao {
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: 1px solid #d5d5d5;
+
+}
