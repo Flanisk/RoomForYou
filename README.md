@@ -1,16 +1,34 @@
-# React + Vite
+# RoomForYou
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Como executar o projeto
 
-Currently, two official plugins are available:
+### Pré-requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Node.js **20.19 ou superior** (ou Node.js 22.12 ou superior);
+- npm, instalado junto com o Node.js.
 
-## React Compiler
+Não é necessário instalar React, Vite, Bootstrap ou os gráficos separadamente. Essas dependências estão listadas no `package.json` e serão instaladas pelo npm.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Instalação
 
-## Expanding the ESLint configuration
+Depois de baixar e extrair o projeto do GitHub, abra um terminal **dentro da pasta que contém o arquivo `package.json`** e execute:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+Abra no navegador o endereço exibido no terminal, normalmente `http://localhost:5173`.
+
+> Não abra o arquivo `index.html` diretamente. O projeto precisa ser iniciado pelo Vite com `npm run dev`.
+
+### Se o projeto já foi instalado anteriormente
+
+Para instalar exatamente as versões registradas no lockfile, use:
+
+```bash
+npm ci
+npm run dev
+```
+
+Se o terminal informar que `node` ou `npm` não foi encontrado, instale o Node.js pelo site oficial e abra um novo terminal antes de repetir os comandos.

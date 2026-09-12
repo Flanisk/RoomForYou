@@ -10,7 +10,6 @@ import Financeiro from "./pages/financeiro/financeiro.jsx";
 import GestaoQuartos from "./pages/gestaoQuartos/gestaoQuartos.jsx";
 import Calendario from "./pages/calendario/calendario.jsx";
 import Hospedes from "./pages/hospedes/hospedes.jsx";
-import Notificacoes from "./pages/notificacoes/notificacoes.jsx";
 import Configuracoes from "./pages/configuracoes/configuracoes.jsx";
 
 createRoot(document.getElementById("root")).render(
@@ -23,7 +22,6 @@ createRoot(document.getElementById("root")).render(
                 <Route path="/gestao-quartos" element={<GestaoQuartos />} />
                 <Route path="/calendario" element={<Calendario />} />
                 <Route path="/hospedes" element={<Hospedes />} />
-                <Route path="/notificacoes" element={<Notificacoes />} />
                 <Route path="/configuracoes" element={<Configuracoes />} />
             </Routes>
             

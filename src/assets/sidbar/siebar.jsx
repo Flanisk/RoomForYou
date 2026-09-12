@@ -40,11 +40,6 @@ function Sidebar() {
                     Hóspedes
                 </NavLink>
 
-                <NavLink to="/notificacoes" className={linkClassName}>
-                    <i className="bi bi-bell"></i>
-                    Notificações
-                </NavLink>
-
                 <NavLink to="/configuracoes" className={linkClassName}>
                     <i className="bi bi-gear-fill"></i>
                     Configurações

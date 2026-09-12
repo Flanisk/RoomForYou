@@ -1,16 +1,97 @@
-.boxUsuario{
-    background-color: #f8f8f8;
-    border: 1px solid gray;
-    width: 200px;
-    height: 45px;
-    border-radius: 15px;
-    color: rgb(0, 0, 0);
-    justify-content: center;
-    display: flex;
-
+.barraUsuario {
+    position: relative;
+    margin-left: auto;
+    width: min(100%, 220px);
 }
 
-.userIconBox{
-    width: 20px;
+.boxUsuario {
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #e5e4e7;
+    border-radius: 12px;
+    color: #202020;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    height: 45px;
+    justify-content: flex-start;
+    padding: 0 12px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+}
 
+.boxUsuario:hover,
+.boxUsuario:focus-visible {
+    border-color: #aa3bff;
+    box-shadow: 0 0 0 3px rgba(140, 110, 232, 0.15);
+    outline: none;
+}
+
+.boxUsuario span {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.boxUsuario > i {
+    color: #6b6375;
+    font-size: 12px;
+}
+
+.userIconBox {
+    border-radius: 50%;
+    height: 24px;
+    object-fit: cover;
+    width: 24px;
+}
+
+.cardLogout {
+    background: #ffffff;
+    border: 1px solid #e5e4e7;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(32, 25, 50, 0.15);
+    padding: 12px;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 8px);
+    width: 180px;
+    z-index: 20;
+}
+
+.logoutTitulo {
+    color: #6b6375;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.logoutButton {
+    align-items: center;
+    background: transparent;
+    border: 0;
+    border-radius: 8px;
+    color: #b42318;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    gap: 10px;
+    padding: 9px 8px;
+    text-align: left;
+    width: 100%;
+}
+
+.logoutButton:hover,
+.logoutButton:focus-visible {
+    background-color: #fff1f0;
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    .barraUsuario {
+        width: 180px;
+    }
 }
