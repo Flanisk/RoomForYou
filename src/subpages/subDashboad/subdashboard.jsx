@@ -37,24 +37,22 @@ function Subdash() {
 
                 {/* GRÁFICO DE PIZZA */}
 
-                <div className="col-md-12">
+                <div className="col-md-4">
                     <div className="pizza">
                         <ApexChart />
                     </div>
                 </div>
 
 
-                {/* GRÁFICO DE RESERVAS */}
-
                 <div className="col-md-8">
                     <div className="pizza">
-                        <ApexChartReservasMensais />
+                        <ApexChartDiasDemanda/>
                     </div>
                 </div>
 
-                <div className="col-md-4">
+                <div className="col-md-12">
                     <div className="pizza">
-                        <ApexChartDiasDemanda/>
+                        <ApexChartReservasMensais />
                     </div>
                 </div>
 

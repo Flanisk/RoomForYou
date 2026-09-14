@@ -27,7 +27,7 @@ function Sidebar() {
 
                 <NavLink to="/gestao-quartos" className={linkClassName}>
                     <i className="bi bi-door-closed"></i>
-                    Gestão de quartos
+                    Quartos
                 </NavLink>
 
                 <NavLink to="/calendario" className={linkClassName}>

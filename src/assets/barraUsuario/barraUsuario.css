@@ -8,12 +8,12 @@
     align-items: center;
     background-color: #ffffff;
     border: 1px solid #e5e4e7;
-    border-radius: 12px;
+    border-radius: 30px;
     color: #202020;
     cursor: pointer;
     display: flex;
     gap: 10px;
-    height: 45px;
+    height: 55px;
     justify-content: flex-start;
     padding: 0 12px;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;

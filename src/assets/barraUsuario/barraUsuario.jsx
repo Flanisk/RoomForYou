@@ -33,7 +33,7 @@ function BarraUsuario() {
                 onClick={() => setIsOpen((current) => !current)}
             >
                 <img className="userIconBox" src={userIcon} alt="" />
-                <span>pintu</span>
+                <span>Usuario</span>
                 <i className={`bi bi-chevron-${isOpen ? "up" : "down"}`} aria-hidden="true" />
             </button>
 

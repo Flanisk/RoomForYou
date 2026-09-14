@@ -6,6 +6,7 @@ import App from "./pages/home/App.jsx";
 
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import Financeiro from "./pages/financeiro/financeiro.jsx";
 import GestaoQuartos from "./pages/gestaoQuartos/gestaoQuartos.jsx";
 import Calendario from "./pages/calendario/calendario.jsx";
