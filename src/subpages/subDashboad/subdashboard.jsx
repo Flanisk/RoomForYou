@@ -3,6 +3,7 @@ import "./subdashboard.css";
 import ApexChart from "../../assets/charts/pizza/graficopizza";
 import ApexChartReservasMensais from "../../assets/charts/reservasmensais/reservasmensais";
 import ApexChartDiasDemanda from "../../assets/charts/diasDemandas/diasdemandas";
+import GraficoColuna from "../../assets/charts/graficoDeColuna/graficoColuna";
 
 function Subdash() {
     return (
@@ -50,9 +51,15 @@ function Subdash() {
                     </div>
                 </div>
 
-                <div className="col-md-12">
+                <div className="col-md-6">
                     <div className="pizza">
                         <ApexChartReservasMensais />
+                    </div>
+                </div>
+
+                <div className="col-md-6">
+                    <div className="pizza">
+                        <GraficoColuna />
                     </div>
                 </div>
 
