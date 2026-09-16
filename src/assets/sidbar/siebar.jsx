@@ -45,6 +45,11 @@ function Sidebar() {
                     Configurações
                 </NavLink>
 
+                <NavLink to="/login" className={linkClassName}>
+                    <i className="bi bi-person"></i>
+                    Login
+                </NavLink>
+
             </nav>
 
         </aside>
