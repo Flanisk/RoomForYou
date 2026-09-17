@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import userIcon from "../../../imgs/userIcon.png";
 import "./barraUsuario.css";
+import { NavLink } from "react-router-dom";
 
 function BarraUsuario() {
     const [isOpen, setIsOpen] = useState(false);
     const menuRef = useRef(null);
+    const linkClassName = ({ isActive }) => (isActive ? "ativo" : undefined);
 
     useEffect(() => {
         function handleOutsideClick(event) {
@@ -17,11 +19,6 @@ function BarraUsuario() {
         return () => document.removeEventListener("mousedown", handleOutsideClick);
     }, []);
 
-    function handleLogout() {
-        localStorage.removeItem("token");
-        sessionStorage.removeItem("token");
-        setIsOpen(false);
-    }
 
     return (
         <div className="barraUsuario" ref={menuRef}>
@@ -40,10 +37,10 @@ function BarraUsuario() {
             {isOpen && (
                 <div className="cardLogout" role="menu">
                     <p className="logoutTitulo">Conta do usuário</p>
-                    <button className="logoutButton" type="button" role="menuitem" onClick={handleLogout}>
-                        <i className="bi bi-box-arrow-right" aria-hidden="true" />
-                        Sair
-                    </button>
+                    <NavLink to="/login" className={linkClassName}>
+                    <i className="bi bi-door-closed"></i>
+                    Sair
+                    </NavLink>
                 </div>
             )}
         </div>

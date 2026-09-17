@@ -12,6 +12,7 @@ import GestaoQuartos from "./pages/gestaoQuartos/gestaoQuartos.jsx";
 import Calendario from "./pages/calendario/calendario.jsx";
 import Hospedes from "./pages/hospedes/hospedes.jsx";
 import Configuracoes from "./pages/configuracoes/configuracoes.jsx";
+import TelaLogin from "./pages/login/login.jsx"
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
@@ -24,6 +25,7 @@ createRoot(document.getElementById("root")).render(
                 <Route path="/calendario" element={<Calendario />} />
                 <Route path="/hospedes" element={<Hospedes />} />
                 <Route path="/configuracoes" element={<Configuracoes />} />
+                <Route path="/login" element = {<TelaLogin/>}></Route>
             </Routes>
             
 
