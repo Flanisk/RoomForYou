@@ -34,7 +34,7 @@ function Sidebar() {
                     <i className="bi bi-calendar"></i>
                     Calendário
                 </NavLink>
-
+                
                 <NavLink to="/hospedes" className={linkClassName}>
                     <i className="bi bi-person"></i>
                     Hóspedes
@@ -49,9 +49,7 @@ function Sidebar() {
                     <i className="bi bi-person"></i>
                     Login
                 </NavLink>
-
             </nav>
-
         </aside>
     );
 }
